@@ -18,7 +18,7 @@ public class Program
                 LevenshteinDistance(s1, s2.Substring(1)) + 1),
             LevenshteinDistance(s1.Substring(1), s2.Substring(1)) + cost);
     }
-	public static int LevenshteinDistance2(string s1, string s2)
+	public static int LevenshteinDistanceModified(string s1, string s2)
     {
         //добавил проверку на null
         if (s1 == null) throw new ArgumentNullException(nameof(s1));
