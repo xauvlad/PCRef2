@@ -77,7 +77,7 @@ public class Program
         string s1 = "kittensafsa";
         string s2 = "sittingasfas";
         Stopwatch sw = Stopwatch.StartNew();
-        int distance = LevenshteinDistance2(s1, s2);
+        int distance = LevenshteinDistanceModified(s1, s2);
         sw.Stop();
         Console.WriteLine($"Расстояние Левенштейна (модифицированный алгоритм): {distance}");
         Console.WriteLine("Время: " + sw.Elapsed + " мс");

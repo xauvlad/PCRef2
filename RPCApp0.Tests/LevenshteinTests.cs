@@ -17,7 +17,7 @@ namespace RPCApp0.Tests
 		[InlineData("1234", "1224533324", 6)]
 		public void Distance_ReturnsExpected(string s1, string s2, int expected)
 		{
-			int actual = Program.LevenshteinDistance2(s1, s2);
+			int actual = Program.LevenshteinDistanceModified(s1, s2);
 			Assert.Equal(expected, actual);
 		}
 
@@ -26,7 +26,7 @@ namespace RPCApp0.Tests
 		[InlineData("a", null)]
 		public void Distance_ThrowsOnNull(string s1, string s2)
 		{
-			Assert.Throws<System.ArgumentNullException>(() => Program.LevenshteinDistance2(s1, s2));
+			Assert.Throws<System.ArgumentNullException>(() => Program.LevenshteinDistanceModified(s1, s2));
 		}
 	}
 }
